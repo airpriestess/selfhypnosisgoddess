@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baby Push</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap">
+<style>
+:root{--cream:#F2ECE4;--ink:#000;--grad:linear-gradient(135deg,#F5E0A0 0%,#E8B870 22%,#BFA5D8 52%,#2CB7A7 78%,#167A6B 100%);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--cream:#F2ECE4;--ink:#000}}
+:root[data-theme="dark"]{--cream:#F2ECE4;--ink:#000}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:var(--cream);font-family:'Jost',sans-serif;font-weight:300;background-image:linear-gradient(rgba(242,236,228,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(242,236,228,.07) 1px,transparent 1px);background-size:26px 26px;min-height:100vh}
+.wrap{max-width:720px;margin:0 auto;padding:32px 16px 48px;display:flex;flex-direction:column;gap:18px}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:400}
+h1{font-size:40px;font-weight:300;margin:0;line-height:1.1}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin:0;font-size:16px;max-width:56ch}
+.bar{display:flex;flex-wrap:wrap;gap:8px}
+button.pill{font:inherit;font-size:14px;letter-spacing:.06em;border:1px solid var(--cream);background:#000;color:var(--cream);border-radius:30px;padding:7px 16px;cursor:pointer}
+button.pill[aria-pressed="true"]{background:var(--grad);color:#000;border-color:transparent}
+.grid{display:flex;flex-wrap:wrap;gap:6px;padding:14px;border-radius:20px;border:1.5px solid transparent;background:linear-gradient(#000,#000) padding-box,var(--grad) border-box}
+.pad{flex:0 0 calc((100% - 42px)/8);aspect-ratio:1;border-radius:10px;border:1px solid rgba(242,236,228,.45);background:#000;cursor:pointer;position:relative;touch-action:none;transition:transform .08s}
+.pad.root{background:var(--grad);border-color:transparent}
+.pad.on{transform:scale(.92);background:var(--cream)}
+.pad.root.on{background:var(--cream)}
+.note{font-size:15px;min-height:22px}
+</style></head><body>
+<div class="wrap">
+  <span class="eyebrow">Self Hypnosis Goddess · my studio</span>
+  <h1>Baby <span class="g">Push</span></h1>
+  <p>Pick a scale. Every pad sounds right. Gradient pads are the home note. Tap, or use keys 1 to 8 and Q to I.</p>
+  <div class="bar" id="scales"></div>
+  <div class="bar" id="sounds"></div>
+  <div class="grid" id="grid" role="group" aria-label="Pads"></div>
+  <div class="note" id="note" aria-live="polite">Tap a pad</div>
+</div>
+<script>
+const SCALES={"C minor":[0,2,3,5,7,8,10],"C major":[0,2,4,5,7,9,11],"Dreamy (pentatonic)":[0,3,5,7,10],"Lydian glow":[0,2,4,6,7,9,11]};
+const SOUNDS={Pad:"pad",Bell:"bell",Pluck:"pluck"};
+const NAMES=["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+let scale="C minor",sound="pad",ctx=null;
+function mk(id,obj,cur,set){const el=document.getElementById(id);el.innerHTML="";Object.keys(obj).forEach(k=>{const b=document.createElement("button");b.className="pill";b.textContent=k;b.setAttribute("aria-pressed",String((obj===SCALES?k:obj[k])===cur()));b.onclick=()=>{set(obj===SCALES?k:obj[k]);render()};el.appendChild(b)})}
+function noteFor(r,c){const s=SCALES[scale],i=c+(7-r)*3,o=Math.floor(i/s.length),d=s[i%s.length];return 48+o*12+d}
+function play(m){ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();const t=ctx.currentTime,f=440*Math.pow(2,(m-69)/12),g=ctx.createGain(),lp=ctx.createBiquadFilter();lp.type="lowpass";lp.frequency.value=sound==="bell"?6000:2200;g.connect(lp);lp.connect(ctx.destination);
+ const types=sound==="pad"?["sine","triangle"]:sound==="bell"?["sine","sine"]:["triangle","sawtooth"];const det=sound==="bell"?[1,2.01]:[1,1.003];
+ types.forEach((ty,i)=>{const o=ctx.createOscillator();o.type=ty;o.frequency.value=f*det[i];o.connect(g);o.start(t);o.stop(t+(sound==="pad"?2.6:1.4))});
+ const a=sound==="pad"?.35:.01,r=sound==="pad"?2.4:sound==="bell"?1.3:.5;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.18,t+a);g.gain.exponentialRampToValueAtTime(.0008,t+a+r);
+ document.getElementById("note").textContent=NAMES[m%12]+(Math.floor(m/12)-1)+" · "+scale}
+function render(){mk("scales",SCALES,()=>scale,v=>scale=v);mk("sounds",SOUNDS,()=>sound,v=>sound=v);const g=document.getElementById("grid");g.innerHTML="";
+ for(let r=0;r<8;r++)for(let c=0;c<8;c++){const m=noteFor(r,c),p=document.createElement("button");p.className="pad"+(m%12===0?" root":"");p.setAttribute("aria-label",NAMES[m%12]);
+ const on=e=>{e.preventDefault();p.classList.add("on");play(m)},off=()=>p.classList.remove("on");p.addEventListener("pointerdown",on);p.addEventListener("pointerup",off);p.addEventListener("pointerleave",off);g.appendChild(p)}}
+const KEYS="12345678qwertyui";document.addEventListener("keydown",e=>{if(e.repeat)return;const i=KEYS.indexOf(e.key.toLowerCase());if(i<0)return;const r=7-Math.floor(i/8),c=i%8;const pad=document.getElementById("grid").children[r*8+c];pad.classList.add("on");play(noteFor(r,c));setTimeout(()=>pad.classList.remove("on"),150)});
+render();
+</script></body></html>
