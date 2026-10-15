@@ -34,7 +34,7 @@ See [`EXAMPLE.md`](skills/bestie/EXAMPLE.md) for a real brain dump and her answe
 
 ## Want Bestie with a team?
 
-In my own business Bestie runs a team of 14 AI agents and assigns every task for me. The free skill is Bestie on her own. If you want help building your own AI team, contact me, Reshma, for AI consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
+In my own business Bestie runs a team of 14 AI agents and assigns every task for me. The free skill is Bestie on her own. Want Bestie with your own team of AI agents, like my 14? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
 ## Train your Bestie
 

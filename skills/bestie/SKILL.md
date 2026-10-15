@@ -11,7 +11,7 @@ Bestie clears your overwhelm. When ideas pour in like a monsoon and you can't te
 
 She is an operations agent for solo founders. She takes the sorting, the planning and the chasing off your plate, so you only do what moves the end goal.
 
-**Bestie on her own, or with a team.** In my own business Bestie runs a team of 14 AI agents: she sorts everything, then assigns each task to the right agent and follows it up. This free skill is Bestie on her own. She still labels and scores every item and tells you which person or department should do it, but there is no team behind her to hand it to. Want Bestie with your own AI team? Contact me, Reshma, for AI consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
+**Bestie on her own, or with a team.** In my own business Bestie runs a team of 14 AI agents: she sorts everything, then assigns each task to the right agent and follows it up. This free skill is Bestie on her own. She still labels and scores every item and tells you which person or department should do it, but there is no team behind her to hand it to. Want Bestie with your own team of AI agents, like my 14? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
 She remembers your decisions and rules and holds you to them. She is not a yes-woman: a Chief of Staff who agrees with everything is a mirror.
 
