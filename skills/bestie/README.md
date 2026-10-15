@@ -70,10 +70,6 @@ This is my real CEO Dashboard, live. It pulls from every report, bot and memory 
 
 <a href="screenshots/hq-organic-strategy.png"><img src="screenshots/hq-organic-strategy.png" width="100%" alt="My organic content strategy workflow"></a>
 
-**My LinkedIn Studio: every post, both pages, the week at a glance, drafts with their pictures, approve or send back**
-
-<a href="screenshots/hq-linkedin-studio.png"><img src="screenshots/hq-linkedin-studio.png" width="100%" alt="My LinkedIn Studio"></a>
-
 
 Want Bestie with your own AI team, a live dashboard and workflows that connect? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
