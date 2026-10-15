@@ -1,35 +1,30 @@
 # Bestie in action
 
-**You (voice note, 8:14):**
-> ok so the shop needs redoing, the newsletter is late, what if we did a podcast?? also from now on every client gets a reply within 24 hours. chase the invoice from March. and the branding feels messy across all my platforms. oh and a new course idea!! we should build a thumbnail studio so YouTube covers take minutes. can Maya write the welcome emails? should I raise prices or wait until January? ok decided, we only post three times a week from now. answer the two client DMs. book the accountant. what about a TikTok series? update my LinkedIn banner. Leo can fix the broken checkout button. never post on a Sunday. a membership app one day. I want a retreat in Bali. send Maya the brand colours. record the launch video. and a book, I should write a book.
+A real voice note from my own day building Self Hypnosis Goddess, lightly trimmed. This is how founders actually talk.
+
+**Me (voice note, 14:09):**
+> extra colour has to go. Can you start using the same diamonds we've done on the CEO dashboard? So all this horrid colour's gone from the audio studio. And the YouTube studio. Also, I did tell you the YouTube studio, this doesn't tell me anything. And it's static. So just remove that. If it doesn't give me anything, what's the point of having it here? Um, the studio room as well. Content calendar, can you not just put the calendar at the top? Review room. Posted. We never posted You Are Chosen. That's weird. Digital Product Studio, again, this one is a mess. I think the most important one is the audio. So if we need to park the rest, that's fine. Oh and where did the Ableton push you made me go? I want to post about it on LinkedIn. And everything should be capitalised, not caps lock, for YouTube titles. Each hypnosis and subliminal needs a different visual. I need a ton of LinkedIn posts to approve. When investors ask for your GitHub, which one do you share, public or private? And I went to a brand event today, the shop should feel like walking on marble.
 
 **Bestie:**
 
 | Item | Type | Owner | Status |
 |---|---|---|---|
-| Fix the broken checkout button | Task | Leo (developer) | Top 10, #1. Money is leaking. |
-| Send the late newsletter | Task | You | Top 10, #2 |
-| Chase the March invoice | Task | You | Top 10, #3. Ten minutes, money on the table. |
-| Answer the two client DMs | Task | You | Top 10, #4 |
-| Send Maya the brand colours | Task | You | Top 10, #5. She is waiting on it. |
-| Welcome emails | Task | Maya (assistant) | Top 10, #6 |
-| Redo the shop | Task | You | Top 10, #7. After the checkout fix. |
-| Book the accountant | Task | AI agent | Top 10, #8. It finds three slots, you pick one. |
-| Record the launch video | Task | You | Top 10, #9 |
-| Update the LinkedIn banner | Task | AI agent | Top 10, #10. It drafts, you approve. |
-| We post three times a week | Decision | Bestie | Saved. She holds you to it. |
-| Every client gets a reply within 24 hours | Rule | Bestie | Saved, applies from now on |
-| Never post on a Sunday | Rule | Bestie | Saved, applies everywhere |
-| Raise prices now or in January? | Question | You | Answer by the end of the week. Bestie asks again in two days. |
-| Branding feels messy across platforms | Question | You | Which platform bothers you most? We fix that one first. |
-| Thumbnail studio | Idea | Heaven | First in line when the shop is done |
-| Start a podcast | Idea | Heaven | Waiting |
-| New course | Idea | Heaven | Waiting |
-| TikTok series | Idea | Heaven | Waiting |
-| Membership app | Idea | Heaven | Waiting |
-| Retreat in Bali | Idea | Heaven | Waiting |
-| Write a book | Idea | Heaven | Waiting |
+| The audio studio comes first, the rest can be parked | Decision | Bestie | Saved. Audio is top of the list today. |
+| Remove the extra colours from the audio studio, use the dashboard diamonds | Task | Design agent | Top 10, #1 |
+| Hypnosis and subliminal versions each get a different visual | Rule | Bestie | Saved, applies to every track |
+| YouTube titles in capitalised words, never caps lock | Rule | Bestie | Saved, applies everywhere |
+| If a panel doesn't tell you anything, it goes | Rule | Bestie | Saved, applies to every page |
+| Remove the static panel from the YouTube studio | Task | Design agent | Top 10, #2. Your new rule says so. |
+| "You Are Chosen" shows as posted but never was | Task | Tech agent | Top 10, #3. Wrong data, fix before you trust the review room. |
+| Write LinkedIn posts for you to approve | Task | Content agent | Top 10, #4. Five drafts by tomorrow. |
+| Find the Ableton push | Question | Tech agent | Search the files first. Answer within the hour. |
+| Public or private GitHub for investors? | Question | You | Public for tools, private for the business. Your call. |
+| Studio room, same diamonds | Task | Design agent | Parked. After the audio studio. |
+| Content calendar: calendar at the top | Task | Design agent | Parked. After the audio studio. |
+| Digital Product Studio tidy up | Task | Design agent | Parked. After the audio studio. |
+| LinkedIn post about the Ableton push | Idea | Heaven | Once it's found |
+| The shop should feel like walking on marble | Idea | Heaven | Next shop redesign |
 
-Twenty two things in one voice note. Ten make today. The checkout first, because money is leaking. Then the newsletter, it's already late. Then the invoice, that's your money. Seven ideas are parked in Heaven, and the thumbnail studio is first in line.
+Fifteen items. You decided audio comes first, so I held you to it: three studio tidy ups are parked, not lost. Three new rules saved, so you never repeat them. The design agent starts on the audio studio now, the tech agent is hunting for the Ableton push, and the one question that is really yours is the GitHub one.
 
-Twenty two caught, ten on the list, seven in Heaven, zero lost. Go get it.
+Fifteen caught, four on today's list, three rules saved, zero lost.
