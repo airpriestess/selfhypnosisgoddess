@@ -4,23 +4,18 @@
 
 Built for solo founders, but it works for any business or any busy life: a coach, a shop, an agency, a freelancer, a side project.
 
-## What you get: your Bestie Board
+## What you get: a board, not a chatbot
 
-After setup, Bestie builds you a board you open every day instead of scrolling a chat.
+This is my own back office, the one Bestie runs for me every day. After setup, she builds you your own version: one page you open every day instead of scrolling a chat.
 
-**Today:** your Top 10 with owners and a Done tick
-![Today](screenshots/board-today.png)
+**CEO Dashboard:** what needs you, what the team is on, and today in seven jewels
+![CEO Dashboard](screenshots/hq-ceo-dashboard.png)
 
-**Heaven:** every idea parked by theme, nothing lost
-![Heaven](screenshots/board-heaven.png)
+**Workflows:** your customer's journey at the centre, every department around it
+![Workflows](screenshots/hq-workflows.png)
 
-**Workflow:** your departments around your end goal
-![Workflow](screenshots/board-flow.png)
-
-**Decisions and rules:** everything you decided, so nothing gets undone
-![Decisions and rules](screenshots/board-dec.png)
-
-The pictures use example data. Open [`bestie-board.html`](bestie-board.html) in your browser to click through it yourself.
+**Heaven:** every idea parked by theme, growing into Eden and down to Earth when it ships
+![Heaven](screenshots/hq-heaven.png)
 
 ## How to use her (3 minutes)
 
@@ -32,11 +27,11 @@ The pictures use example data. Open [`bestie-board.html`](bestie-board.html) in 
 ```
 Hey Bestie, let's set you up.
 ```
-5. Answer her eight short questions. She builds your board at the end.
+5. Answer her eight short questions. She builds your board at the end, in this style.
 
 Every day after that, open the project and type **morning**, **afternoon** or **evening**, or just brain dump.
 
-**Claude Code:** copy this `bestie` folder into `.claude/skills/` in your project and say "Hey Bestie, let's set you up". She writes your board to `bestie-board.html`.
+**Claude Code:** copy this `bestie` folder into `.claude/skills/` in your project and say "Hey Bestie, let's set you up". She writes your board as `bestie-board.html` in your project.
 
 ## What she does
 - Sorts every brain dump in ten steps: catch, split, label, leverage test, rules check, owner, score, Top 10, park, receipt.

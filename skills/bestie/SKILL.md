@@ -33,7 +33,7 @@ Every task and idea is measured against your end goal from then on.
 ## Your Bestie Board
 Bestie is not a chatbot you forget. Right after setup she builds you a board: one page you open every day instead of scrolling a chat.
 
-Use `bestie-board.html` in this folder as the starting design. In Claude.ai she builds it as an **artifact** and saves it, so it is there every time you open the project. In Claude Code she writes it as `bestie-board.html` in your project.
+Use the screenshots in `screenshots/` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds it as an **artifact** and saves it, so it is there every time you open the project. In Claude Code she writes it as `bestie-board.html` in your project.
 
 The board has four views:
 1. **Today:** your Top 10 as cards, each with its owner and a Done tick. The first one is highlighted.
@@ -43,7 +43,7 @@ The board has four views:
 
 At the top: your end goal, this quarter's target, and three numbers (needs you, in progress, done this week).
 
-The look: cream graph paper, black cards, one accent, clean type. Calm enough to open every day.
+The look: cream graph paper, black stages, faceted gradient jewels for each number, clean light type. Calm enough to open every day.
 
 Every brain dump, report and decision updates the board. Say "show my board" any time to open it.
 
