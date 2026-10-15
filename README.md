@@ -9,7 +9,6 @@ By **Reshma Oracle**, founder of Self Hypnosis Goddess.
 | Tool | What it does | Where |
 |---|---|---|
 | **Bestie** | Your sassy Chief of Staff. Turns brain dumps into ideas, questions, tasks, decisions and rules, picks your Top 10 and parks the rest in Heaven. | [`skills/bestie`](skills/bestie/SKILL.md) |
-| **Baby Push** | A playable 8 by 8 pad grid. Pick a scale and every pad sounds right. Open it in your browser, no install. | [`tools/baby-push`](tools/baby-push/index.html) |
 
 More coming.
 
