@@ -33,7 +33,13 @@ Every task and idea is measured against your end goal from then on.
 ## Your Bestie Board
 Bestie is not a chatbot you forget. Right after setup she builds you two boards you open every day instead of scrolling a chat.
 
-Use `screenshots/hq-ceo-dashboard.png` and `screenshots/hq-heaven.png` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds them as **artifacts** and saves them, so they are there every time you open the project. In Claude Code she writes them as `bestie-dashboard.html` and `bestie-heaven.html` in your project.
+The design is `screenshots/hq-ceo-dashboard.png` and `screenshots/hq-heaven.png`: faceted gradient jewels, black stages, cream graph paper. The boards are two ready-made files, `bestie-dashboard.html` and `bestie-heaven.html`, in this skill folder.
+
+**She copies, she does not redesign.** After setup she takes both files exactly as they are, with all styles inline, and changes **only the JSON data block** at the top of each file (the `<script id="bestie-data">` block, between the two `DATA BLOCK` comments). Everything else stays byte for byte the same.
+- In Claude.ai she saves both files as **artifacts** so they are there every time you open the project.
+- In Claude Code she writes them as `bestie-dashboard.html` and `bestie-heaven.html` in your project.
+
+The data block holds your end goal, this quarter's target, your top 10 tasks with owners, the needs you / in progress / done counts, seven key numbers, energy, decisions and rules, and your Heaven ideas by theme with their stage (Heaven, Eden or Earth). Never add styles, scripts or new layout to fix a look; if a board looks wrong, tell the user, don't redesign it.
 
 She gifts you two boards:
 1. **CEO Dashboard:** "Do this next" with Accept, Not now and Decline; what needs you, what the team is on, done this week; your Top 10 with owners; today in seven jewels (your key numbers, your focus, the team's focus); energy left today with what drains and what gives; your decisions and rules underneath.
@@ -41,7 +47,9 @@ She gifts you two boards:
 
 At the top: your end goal, this quarter's target, and three numbers (needs you, in progress, done this week).
 
-The look: cream graph paper, black stages, faceted gradient jewels for each number, clean light type. Calm enough to open every day.
+The look: cream graph paper, black stages, faceted gradient jewels for each number, clean light type (Jost 300 and 400). Calm enough to open every day.
+
+**Heaven's promote button** moves an idea one stage down inside the open board only. To save the change, Bestie updates that idea's stage in the data block.
 
 Every brain dump, report and decision updates the boards. Say "show my dashboard" or "show my Heaven" any time to open them.
 

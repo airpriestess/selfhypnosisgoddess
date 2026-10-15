@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bestie · Heaven</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0a0a;
+    --cream:#fdf0e8;
+    --grad:linear-gradient(135deg,#F5E0A0 0%,#E8B870 22%,#BFA5D8 52%,#2CB7A7 78%,#167A6B 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Jost',sans-serif;font-weight:400;color:var(--ink);
+    background-color:var(--cream);
+    background-image:
+      linear-gradient(rgba(10,10,10,.06) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(10,10,10,.06) 1px,transparent 1px);
+    background-size:28px 28px;
+    min-height:100vh;
+  }
+  .app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+
+  /* Sidebar */
+  .side{
+    background:var(--ink);color:var(--cream);
+    padding:22px 16px;display:flex;flex-direction:column;gap:22px;
+    position:sticky;top:0;height:100vh;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:300;font-size:13px;letter-spacing:.12em;text-transform:uppercase;line-height:1.4}
+  .nav{display:flex;flex-direction:column;gap:6px}
+  .nav-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:0 14px;margin-top:8px}
+  .nav a{
+    display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;
+    color:var(--cream);text-decoration:none;font-weight:300;font-size:15px;
+    border:1px solid transparent;
+  }
+  .nav a:hover{border-color:var(--cream)}
+  .nav a.on{background:var(--grad);color:var(--ink);font-weight:400;border-color:transparent}
+  .side-foot{margin-top:auto;font-size:12px;font-weight:300;letter-spacing:.04em}
+
+  /* Main */
+  .main{padding:22px 28px 60px;min-width:0}
+  .bar{
+    background:var(--ink);color:var(--cream);border-radius:999px;
+    padding:12px 18px;display:flex;align-items:center;gap:12px;
+    font-weight:300;font-size:22px;
+  }
+  .stamp{text-align:center;font-size:13px;margin:14px 0 14px;letter-spacing:.04em}
+
+  /* Summary pills */
+  .summary{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center}
+  .big-pill{
+    border:1px solid var(--ink);border-radius:999px;padding:8px 22px;
+    display:inline-flex;align-items:baseline;gap:10px;background:transparent;
+  }
+  .big-pill b{font-weight:300;font-size:30px;line-height:1}
+  .big-pill span{font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+  .heading-tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+
+  /* Cloud */
+  .cloud{position:relative;margin:22px auto 0;max-width:1000px;text-align:center}
+  .cloud svg{display:block;width:100%;height:auto}
+  .cloud .words{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .cloud h2{
+    font-weight:300;font-size:clamp(28px,4.4vw,46px);letter-spacing:.42em;margin-right:-.42em;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .cloud p{font-weight:300;font-size:clamp(15px,1.8vw,19px);margin-top:6px}
+
+  /* Stage legend */
+  .legend{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .stage{
+    font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid var(--ink);border-radius:999px;padding:3px 12px;white-space:nowrap;
+  }
+  .stage.heaven{background:var(--grad);border-color:transparent}
+  .stage.eden{background:var(--cream);border-color:var(--ink)}
+  .stage.earth{background:var(--ink);color:var(--cream)}
+
+  /* Theme cards */
+  .themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-top:22px}
+  .card{background:var(--ink);color:var(--cream);border-radius:18px;padding:18px;min-width:0;display:flex;flex-direction:column;gap:14px}
+  .theme-head{display:flex;align-items:center;gap:12px}
+  .theme-head h3{font-weight:300;font-size:24px;line-height:1.1}
+  .theme-head .wait{font-size:13px;margin-top:2px}
+  .counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .count{border:1px solid var(--cream);border-radius:999px;padding:6px 8px;text-align:center;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+  .count b{display:block;font-weight:300;font-size:20px;letter-spacing:0;text-transform:none}
+  .ideas{list-style:none;display:flex;flex-direction:column}
+  .idea{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;
+    padding:10px 0;border-top:1px solid rgba(253,240,232,.25);font-size:15px;line-height:1.35;
+  }
+  .idea:first-child{border-top:none}
+  .idea .meta{display:flex;align-items:center;gap:8px;margin-top:6px}
+  .idea .txt{min-width:0;overflow-wrap:anywhere}
+  .btn{
+    font:inherit;font-size:13px;border-radius:999px;padding:5px 12px;cursor:pointer;white-space:nowrap;
+    border:1px solid var(--cream);background:transparent;color:var(--cream);
+  }
+  .btn:hover:not(:disabled){background:var(--grad);border-color:transparent;color:var(--ink)}
+  .btn:disabled{cursor:not-allowed;border-style:dashed;opacity:.55}
+  .empty{font-size:14px;font-weight:300}
+
+  .foot-note{text-align:center;font-size:13px;margin-top:22px}
+
+  /* Responsive */
+  @media (max-width:900px){
+    .app{grid-template-columns:1fr}
+    .side{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:12px}
+    .nav{flex-direction:row;flex-wrap:wrap}
+    .nav-label,.side-foot{display:none}
+    .main{padding:18px 16px 60px}
+    .themes{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ DATA BLOCK: the only part Bestie changes ============ -->
+<script id="bestie-data" type="application/json">
+{
+  "name": "Alex Example",
+  "business": "Guided audio programmes for busy professionals",
+  "updated": "Thu 15 Oct 2026, 23:48 Madrid",
+  "themes": [
+    {
+      "name": "Money",
+      "ideas": [
+        { "text": "A founding group price with a bonus call", "stage": "eden" },
+        { "text": "Corporate wellbeing package for small teams", "stage": "heaven" },
+        { "text": "Yearly plan with two free months", "stage": "heaven" },
+        { "text": "Refund policy that builds trust", "stage": "earth" }
+      ]
+    },
+    {
+      "name": "Audio",
+      "ideas": [
+        { "text": "Morning and evening versions of module one", "stage": "eden" },
+        { "text": "Sleep track with no voice, just tones", "stage": "heaven" },
+        { "text": "Voice notes from members as bonus tracks", "stage": "heaven" }
+      ]
+    },
+    {
+      "name": "Content",
+      "ideas": [
+        { "text": "Weekly Q and A video answering member questions", "stage": "heaven" },
+        { "text": "Short carousel on one myth per post", "stage": "eden" },
+        { "text": "Behind-the-scenes reel from the recording room", "stage": "earth" },
+        { "text": "Podcast guest swaps with two coaches", "stage": "heaven" }
+      ]
+    },
+    {
+      "name": "Growth",
+      "ideas": [
+        { "text": "Referral link with a free track for both sides", "stage": "heaven" },
+        { "text": "Partner newsletter swap", "stage": "eden" }
+      ]
+    },
+    {
+      "name": "Product",
+      "ideas": [
+        { "text": "Member progress tracker in the app", "stage": "heaven" },
+        { "text": "Offline download for every track", "stage": "earth" }
+      ]
+    },
+    {
+      "name": "Team",
+      "ideas": [
+        { "text": "Hire a part-time editor for audio clean-up", "stage": "heaven" },
+        { "text": "Weekly Bestie review, Friday at 4pm", "stage": "earth" }
+      ]
+    },
+    {
+      "name": "Other",
+      "ideas": [
+        { "text": "Write a book about the first year", "stage": "heaven" },
+        { "text": "Speak at one local business event", "stage": "heaven" }
+      ]
+    }
+  ]
+}
+</script>
+<!-- ============ END DATA BLOCK ============ -->
+
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <span id="brandJewel"></span>
+      <span><span id="who"></span><br>Bestie</span>
+    </div>
+    <nav class="nav">
+      <div class="nav-label">Home</div>
+      <a href="bestie-dashboard.html">
+        <span aria-hidden="true">&#8962;</span> CEO Dashboard
+      </a>
+      <a href="bestie-heaven.html" class="on">
+        <span aria-hidden="true">&#10022;</span> Heaven
+      </a>
+    </nav>
+    <div class="side-foot" id="sideFoot"></div>
+  </aside>
+
+  <main class="main">
+    <div class="bar">
+      <span id="barJewel"></span>
+      <h1 style="font-weight:300;font-size:22px">Heaven</h1>
+    </div>
+
+    <div class="stamp" id="stamp"></div>
+
+    <div class="summary">
+      <span class="heading-tag"><span id="sumJewel"></span>Heaven to Earth</span>
+      <span class="big-pill"><b id="sumHeaven">0</b><span>in Heaven</span></span>
+      <span class="big-pill"><b id="sumEden">0</b><span>growing</span></span>
+      <span class="big-pill"><b id="sumEarth">0</b><span>on Earth</span></span>
+    </div>
+
+    <div class="cloud">
+      <svg viewBox="0 0 1000 220" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <defs>
+          <linearGradient id="cloudG" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#F5E0A0"/><stop offset=".22" stop-color="#E8B870"/>
+            <stop offset=".52" stop-color="#BFA5D8"/><stop offset=".78" stop-color="#2CB7A7"/>
+            <stop offset="1" stop-color="#167A6B"/>
+          </linearGradient>
+        </defs>
+        <path d="M120,200 C40,200 40,120 110,115 C110,40 230,30 280,90 C320,20 460,20 500,90 C540,30 680,30 720,95 C790,40 920,70 890,140 C960,150 960,200 880,200 Z"
+              fill="url(#cloudG)" fill-opacity=".38" stroke="#0a0a0a" stroke-opacity=".5" stroke-width="1.2"/>
+      </svg>
+      <div class="words">
+        <h2>HEAVEN</h2>
+        <p id="cloudLine"></p>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span class="stage heaven">Heaven · waiting</span>
+      <span class="stage eden">Eden · growing</span>
+      <span class="stage earth">Earth · shipped</span>
+    </div>
+
+    <div class="themes" id="themes"></div>
+
+    <p class="foot-note">Promote moves an idea one stage down: Heaven, then Eden, then Earth.</p>
+  </main>
+</div>
+
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('bestie-data').textContent);
+
+  var STAGES = ['heaven', 'eden', 'earth'];
+  var STAGE_LABEL = { heaven: 'Heaven', eden: 'Eden', earth: 'Earth' };
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  var jewelCount = 0;
+  function jewel(size) {
+    var id = 'jg' + (++jewelCount);
+    return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 64 64" aria-hidden="true">' +
+      '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#F5E0A0"/><stop offset=".22" stop-color="#E8B870"/>' +
+      '<stop offset=".52" stop-color="#BFA5D8"/><stop offset=".78" stop-color="#2CB7A7"/>' +
+      '<stop offset="1" stop-color="#167A6B"/></linearGradient></defs>' +
+      '<polygon points="32,4 56,22 48,58 16,58 8,22" fill="url(#' + id + ')"/>' +
+      '<polygon points="32,4 8,22 32,30" fill="#fdf0e8" fill-opacity=".45"/>' +
+      '<polygon points="32,4 56,22 32,30" fill="#fdf0e8" fill-opacity=".2"/>' +
+      '<polygon points="8,22 16,58 32,30" fill="#0a0a0a" fill-opacity=".14"/>' +
+      '<polygon points="56,22 48,58 32,30" fill="#0a0a0a" fill-opacity=".26"/>' +
+      '<polygon points="16,58 48,58 32,30" fill="#0a0a0a" fill-opacity=".08"/>' +
+      '</svg>';
+  }
+
+  function countStage(theme, stage) {
+    return theme.ideas.filter(function (i) { return i.stage === stage; }).length;
+  }
+
+  function totals() {
+    var t = { heaven: 0, eden: 0, earth: 0 };
+    D.themes.forEach(function (th) {
+      STAGES.forEach(function (s) { t[s] += countStage(th, s); });
+    });
+    return t;
+  }
+
+  function render() {
+    document.title = 'Bestie · Heaven · ' + D.name;
+    document.getElementById('brandJewel').innerHTML = jewel(30);
+    document.getElementById('barJewel').innerHTML = jewel(26);
+    document.getElementById('sumJewel').innerHTML = jewel(22);
+    document.getElementById('who').textContent = D.name;
+    document.getElementById('sideFoot').textContent = D.business;
+    document.getElementById('stamp').textContent = 'Updated ' + D.updated;
+
+    var t = totals();
+    document.getElementById('sumHeaven').textContent = t.heaven;
+    document.getElementById('sumEden').textContent = t.eden;
+    document.getElementById('sumEarth').textContent = t.earth;
+    document.getElementById('cloudLine').textContent = t.heaven + ' seeds of light waiting';
+
+    document.getElementById('themes').innerHTML = D.themes.map(function (th, ti) {
+      var rows = th.ideas.map(function (idea, ii) {
+        var last = idea.stage === 'earth';
+        return '<li class="idea"><div class="txt">' + esc(idea.text) +
+          '<div class="meta"><span class="stage ' + idea.stage + '">' + STAGE_LABEL[idea.stage] + '</span></div></div>' +
+          '<button class="btn" data-theme="' + ti + '" data-idea="' + ii + '"' + (last ? ' disabled' : '') + '>Promote</button></li>';
+      }).join('');
+
+      return '<section class="card">' +
+        '<div class="theme-head">' + jewel(44) +
+        '<div><h3>' + esc(th.name) + '</h3><div class="wait">' + countStage(th, 'heaven') + ' waiting</div></div></div>' +
+        '<div class="counts">' +
+        STAGES.map(function (s) {
+          return '<div class="count">' + STAGE_LABEL[s] + '<b>' + countStage(th, s) + '</b></div>';
+        }).join('') +
+        '</div>' +
+        (th.ideas.length ? '<ul class="ideas">' + rows + '</ul>' : '<p class="empty">Nothing here yet.</p>') +
+        '</section>';
+    }).join('');
+  }
+
+  // Promote moves one stage down in this session only. Bestie saves the real change in the data block.
+  document.getElementById('themes').addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-theme]');
+    if (!btn || btn.disabled) return;
+    var idea = D.themes[+btn.dataset.theme].ideas[+btn.dataset.idea];
+    var next = STAGES[STAGES.indexOf(idea.stage) + 1];
+    if (next) idea.stage = next;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

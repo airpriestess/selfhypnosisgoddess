@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bestie · CEO Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0a0a;
+    --cream:#fdf0e8;
+    --grad:linear-gradient(135deg,#F5E0A0 0%,#E8B870 22%,#BFA5D8 52%,#2CB7A7 78%,#167A6B 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Jost',sans-serif;font-weight:400;color:var(--ink);
+    background-color:var(--cream);
+    background-image:
+      linear-gradient(rgba(10,10,10,.06) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(10,10,10,.06) 1px,transparent 1px);
+    background-size:28px 28px;
+    min-height:100vh;
+  }
+  .app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+
+  /* Sidebar */
+  .side{
+    background:var(--ink);color:var(--cream);
+    padding:22px 16px;display:flex;flex-direction:column;gap:22px;
+    position:sticky;top:0;height:100vh;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:300;font-size:13px;letter-spacing:.12em;text-transform:uppercase;line-height:1.4}
+  .nav{display:flex;flex-direction:column;gap:6px}
+  .nav-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:0 14px;margin-top:8px}
+  .nav a{
+    display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;
+    color:var(--cream);text-decoration:none;font-weight:300;font-size:15px;
+    border:1px solid transparent;
+  }
+  .nav a:hover{border-color:var(--cream)}
+  .nav a.on{background:var(--grad);color:var(--ink);font-weight:400;border-color:transparent}
+  .side-foot{margin-top:auto;font-size:12px;font-weight:300;letter-spacing:.04em}
+
+  /* Main */
+  .main{padding:22px 28px 60px;min-width:0}
+  .bar{
+    background:var(--ink);color:var(--cream);border-radius:999px;
+    padding:12px 18px;display:flex;align-items:center;gap:12px;
+    font-weight:300;font-size:22px;
+  }
+  .stamp{text-align:center;font-size:13px;margin:14px 0 12px;letter-spacing:.04em}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .pill{
+    border:1px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:14px;
+    display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+  }
+  .pill b{font-weight:400;background:var(--ink);color:var(--cream);border-radius:999px;padding:1px 9px;font-size:13px}
+
+  /* Cards */
+  .card{background:var(--ink);color:var(--cream);border-radius:18px;padding:20px;min-width:0}
+  .card.light{
+    background:
+      linear-gradient(var(--cream),var(--cream)) padding-box,
+      var(--grad) border-box;
+    border:2px solid transparent;color:var(--ink);
+  }
+  .label{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:400;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .tag{border:1px solid currentColor;border-radius:999px;padding:2px 10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+
+  /* Goal strip */
+  .goal{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+  .goal h2{font-weight:300;font-size:26px;line-height:1.2;margin-top:8px}
+  .goal .sub{font-size:14px;margin-top:6px}
+  .gtext{
+    font-weight:300;font-size:26px;line-height:1.2;margin-top:8px;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+
+  /* Hero: next action + counts */
+  .hero{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+  .next-title{font-weight:300;font-size:21px;line-height:1.3;margin:10px 0 14px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .btn{
+    font:inherit;font-size:14px;border-radius:999px;padding:8px 16px;cursor:pointer;
+    border:1px solid var(--ink);background:transparent;color:var(--ink);
+  }
+  .btn.primary{background:var(--grad);border-color:transparent;color:var(--ink)}
+  .btn:disabled{cursor:not-allowed;border-style:dashed;opacity:.55}
+  .note{font-size:13px;margin-top:12px}
+  .counts{display:flex;align-items:center;gap:22px;height:100%}
+  .counts ul{list-style:none;display:grid;gap:10px}
+  .counts li{display:flex;align-items:baseline;gap:10px;font-size:15px}
+  .counts li b{font-weight:300;font-size:26px;min-width:44px}
+  .counts li span.pc{font-size:13px;margin-left:auto}
+
+  /* Seven jewels */
+  .jewels{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin-top:16px}
+  .jewel{text-align:center;padding:18px 10px 16px}
+  .jewel svg{display:block;margin:0 auto}
+  .jewel .lbl{margin-top:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+  .jewel .val{font-weight:300;font-size:24px;margin-top:6px;line-height:1.2;overflow-wrap:anywhere}
+  .jewel .sub{font-size:13px;margin-top:4px}
+
+  /* Energy */
+  .energy{
+    background:var(--ink);color:var(--cream);border-radius:18px;padding:16px 22px;
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:16px;
+  }
+  .energy .big{font-weight:300;font-size:26px}
+  .track{flex:1;min-width:200px;height:10px;border:1px solid var(--cream);border-radius:999px;overflow:hidden}
+  .fill{height:100%;background:var(--grad)}
+  .energy .meta{font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+
+  /* Two columns */
+  .two{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:16px}
+  .top10 li{
+    list-style:none;display:grid;grid-template-columns:30px minmax(0,1fr) auto auto;gap:12px;
+    align-items:center;padding:10px 0;border-top:1px solid rgba(253,240,232,.25);font-size:15px;
+  }
+  .top10 li:first-child{border-top:none}
+  .top10 .n{font-weight:300;font-size:18px}
+  .top10 .done .t{text-decoration:line-through;opacity:1;color:var(--cream)}
+  .top10 .owner{font-size:12px;border:1px solid var(--cream);border-radius:999px;padding:2px 10px;white-space:nowrap}
+  .top10 .st{font-size:12px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+  .dr h3{font-weight:300;font-size:18px;margin:14px 0 6px}
+  .dr ul{padding-left:0;list-style:none;display:grid;gap:8px;font-size:15px}
+  .dr li::before{content:"\25C6";background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-right:10px;font-size:12px}
+  .dr h3:first-of-type{margin-top:0}
+
+  /* Responsive */
+  @media (max-width:1180px){
+    .jewels{grid-template-columns:repeat(4,minmax(0,1fr))}
+  }
+  @media (max-width:900px){
+    .app{grid-template-columns:1fr}
+    .side{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:12px}
+    .nav{flex-direction:row;flex-wrap:wrap}
+    .nav-label,.side-foot{display:none}
+    .hero,.two,.goal{grid-template-columns:1fr}
+    .jewels{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .main{padding:18px 16px 60px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ DATA BLOCK: the only part Bestie changes ============ -->
+<script id="bestie-data" type="application/json">
+{
+  "name": "Alex Example",
+  "business": "Guided audio programmes for busy professionals",
+  "updated": "Thu 15 Oct 2026, 23:48 Madrid",
+  "endGoal": { "text": "$120k a year", "by": "December 2027" },
+  "quarter": { "label": "Q4 2026", "target": "Launch the autumn programme to 50 paying members", "done": 14, "of": 50 },
+  "nextUp": {
+    "task": "Approve the autumn launch email, then send it to the list",
+    "owner": "You",
+    "why": "Three tasks wait on this",
+    "urgent": true
+  },
+  "counts": { "needsYou": 3, "inProgress": 5, "doneWeek": 8 },
+  "top10": [
+    { "task": "Approve the autumn launch email, then send it", "owner": "You", "status": "todo", "due": "Today" },
+    { "task": "Record the intro audio for module one", "owner": "You", "status": "doing", "due": "Fri" },
+    { "task": "Draft five LinkedIn posts for the launch week", "owner": "AI agent", "status": "doing", "due": "Fri" },
+    { "task": "Fix the broken checkout link on the offer page", "owner": "Sam (developer)", "status": "todo", "due": "Today" },
+    { "task": "Reply to the three open partnership enquiries", "owner": "Sam (assistant)", "status": "todo", "due": "Tomorrow" },
+    { "task": "Send invoices for September", "owner": "Accountant", "status": "done", "due": "Done" },
+    { "task": "Schedule the launch webinar", "owner": "AI agent", "status": "doing", "due": "Mon" },
+    { "task": "Write the sales page FAQ", "owner": "AI agent", "status": "todo", "due": "Mon" },
+    { "task": "Decide the price for the founding group", "owner": "You", "status": "todo", "due": "Mon" },
+    { "task": "Tidy the shop product photos", "owner": "Sam (assistant)", "status": "todo", "due": "Next week" }
+  ],
+  "jewels": [
+    { "label": "Monthly revenue", "value": "$2,400", "sub": "of $10,000 goal" },
+    { "label": "Shop", "value": "$310", "sub": "6 orders, 30 days" },
+    { "label": "Email list", "value": "1,240", "sub": "+38 this week" },
+    { "label": "My focus", "value": "Record the audio", "sub": "4 tasks for you" },
+    { "label": "Team focus", "value": "Marketing", "sub": "40% of urgent work" },
+    { "label": "Money today", "value": "$0", "sub": "0 sales today" },
+    { "label": "Programmes live", "value": "3", "sub": "in the shop" }
+  ],
+  "energy": { "left": 62, "of": 100, "drains": "3 tasks overdue", "gives": "5 tasks done today" },
+  "decisions": [
+    "Autumn programme launches before the winter sale",
+    "Founding group price is decided this week, not next month"
+  ],
+  "rules": [
+    "Every client gets a reply within 24 hours",
+    "Nothing goes live without your approval",
+    "Finish unfinished work before starting anything new"
+  ]
+}
+</script>
+<!-- ============ END DATA BLOCK ============ -->
+
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <span id="brandJewel"></span>
+      <span><span id="who"></span><br>Bestie</span>
+    </div>
+    <nav class="nav">
+      <div class="nav-label">Home</div>
+      <a href="bestie-dashboard.html" class="on">
+        <span aria-hidden="true">&#8962;</span> CEO Dashboard
+      </a>
+      <a href="bestie-heaven.html">
+        <span aria-hidden="true">&#10022;</span> Heaven
+      </a>
+    </nav>
+    <div class="side-foot" id="sideFoot"></div>
+  </aside>
+
+  <main class="main">
+    <div class="bar">
+      <span id="barJewel"></span>
+      <h1 style="font-weight:300;font-size:22px">CEO Dashboard</h1>
+    </div>
+
+    <div class="stamp" id="stamp"></div>
+
+    <div class="pills" id="pills"></div>
+
+    <div class="goal">
+      <section class="card">
+        <div class="label">End goal</div>
+        <div class="gtext" id="endGoal"></div>
+        <div class="sub" id="endBy"></div>
+      </section>
+      <section class="card">
+        <div class="label" id="qLabel"></div>
+        <h2 id="qTarget"></h2>
+        <div class="sub" id="qProgress"></div>
+      </section>
+    </div>
+
+    <div class="hero">
+      <section class="card light">
+        <div class="label">Do this next <span class="tag" id="nextOwner"></span> <span class="tag" id="nextUrgent"></span></div>
+        <div class="next-title" id="nextTask"></div>
+        <div class="btns">
+          <button class="btn primary" id="btnAccept">Accept</button>
+          <button class="btn" id="btnLater">Not now</button>
+          <button class="btn" id="btnDecline">Decline</button>
+        </div>
+        <div class="note" id="nextNote"></div>
+      </section>
+      <section class="card">
+        <div class="counts">
+          <ul id="countList"></ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="jewels" id="jewels"></div>
+
+    <div class="energy">
+      <span class="label" style="color:var(--cream)">Energy left today</span>
+      <span class="big" id="energyBig"></span>
+      <div class="track"><div class="fill" id="energyFill"></div></div>
+      <span class="meta" id="energyDrains"></span>
+      <span class="meta" id="energyGives"></span>
+    </div>
+
+    <div class="two">
+      <section class="card">
+        <div class="label">Top 10 <span class="tag" id="top10Count"></span></div>
+        <ol style="margin-top:12px;padding:0" class="top10" id="top10"></ol>
+      </section>
+      <section class="card dr">
+        <div class="label">Decisions and rules</div>
+        <h3>Decisions</h3>
+        <ul id="decisions"></ul>
+        <h3>Rules</h3>
+        <ul id="rules"></ul>
+      </section>
+    </div>
+  </main>
+</div>
+
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('bestie-data').textContent);
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  // Faceted jewel built from the brand gradient. Each call gets its own gradient id.
+  var jewelCount = 0;
+  function jewel(size) {
+    var id = 'jg' + (++jewelCount);
+    return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 64 64" aria-hidden="true">' +
+      '<defs><linearGradient id="' + id + '" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#F5E0A0"/><stop offset=".22" stop-color="#E8B870"/>' +
+      '<stop offset=".52" stop-color="#BFA5D8"/><stop offset=".78" stop-color="#2CB7A7"/>' +
+      '<stop offset="1" stop-color="#167A6B"/></linearGradient></defs>' +
+      '<polygon points="32,4 56,22 48,58 16,58 8,22" fill="url(#' + id + ')"/>' +
+      '<polygon points="32,4 8,22 32,30" fill="#fdf0e8" fill-opacity=".45"/>' +
+      '<polygon points="32,4 56,22 32,30" fill="#fdf0e8" fill-opacity=".2"/>' +
+      '<polygon points="8,22 16,58 32,30" fill="#0a0a0a" fill-opacity=".14"/>' +
+      '<polygon points="56,22 48,58 32,30" fill="#0a0a0a" fill-opacity=".26"/>' +
+      '<polygon points="16,58 48,58 32,30" fill="#0a0a0a" fill-opacity=".08"/>' +
+      '</svg>';
+  }
+
+  function pct(n, total) {
+    return total ? Math.round((n / total) * 100) : 0;
+  }
+
+  function render() {
+    document.title = 'Bestie · CEO Dashboard · ' + D.name;
+    document.getElementById('brandJewel').innerHTML = jewel(30);
+    document.getElementById('barJewel').innerHTML = jewel(26);
+    document.getElementById('who').textContent = D.name;
+    document.getElementById('sideFoot').textContent = D.business;
+    document.getElementById('stamp').textContent = 'Updated ' + D.updated;
+
+    var c = D.counts;
+    document.getElementById('pills').innerHTML =
+      '<span class="pill">Needs you <b>' + esc(c.needsYou) + '</b></span>' +
+      '<span class="pill">In progress <b>' + esc(c.inProgress) + '</b></span>' +
+      '<span class="pill">Done this week <b>' + esc(c.doneWeek) + '</b></span>';
+
+    document.getElementById('endGoal').textContent = D.endGoal.text;
+    document.getElementById('endBy').textContent = 'By ' + D.endGoal.by;
+    document.getElementById('qLabel').textContent = 'This quarter · ' + D.quarter.label;
+    document.getElementById('qTarget').textContent = D.quarter.target;
+    document.getElementById('qProgress').textContent =
+      D.quarter.done + ' of ' + D.quarter.of + ' done (' + pct(D.quarter.done, D.quarter.of) + '%)';
+
+    var n = D.nextUp;
+    document.getElementById('nextOwner').textContent = n.owner;
+    document.getElementById('nextUrgent').textContent = n.urgent ? 'Urgent' : '';
+    document.getElementById('nextTask').textContent = n.task;
+    document.getElementById('nextNote').textContent = n.why;
+
+    var total = c.needsYou + c.inProgress + c.doneWeek;
+    document.getElementById('countList').innerHTML =
+      countRow(c.needsYou, 'Needs you', pct(c.needsYou, total)) +
+      countRow(c.inProgress, 'In progress', pct(c.inProgress, total)) +
+      countRow(c.doneWeek, 'Done this week', pct(c.doneWeek, total));
+
+    document.getElementById('jewels').innerHTML = D.jewels.map(function (j, i) {
+      return '<section class="card jewel">' + jewel(56) +
+        '<div class="lbl">' + esc(j.label) + '</div>' +
+        '<div class="val">' + esc(j.value) + '</div>' +
+        '<div class="sub">' + esc(j.sub) + '</div></section>';
+    }).join('');
+
+    var e = D.energy;
+    document.getElementById('energyBig').textContent = e.left + ' of ' + e.of;
+    document.getElementById('energyFill').style.width = pct(e.left, e.of) + '%';
+    document.getElementById('energyDrains').textContent = 'Drains: ' + e.drains;
+    document.getElementById('energyGives').textContent = 'Gives: ' + e.gives;
+
+    document.getElementById('top10Count').textContent = D.top10.length + ' items';
+    document.getElementById('top10').innerHTML = D.top10.map(function (t, i) {
+      var done = t.status === 'done';
+      return '<li class="' + (done ? 'done' : '') + '">' +
+        '<span class="n">' + (i + 1) + '</span>' +
+        '<span class="t">' + esc(t.task) + '</span>' +
+        '<span class="owner">' + esc(t.owner) + '</span>' +
+        '<span class="st">' + esc(done ? 'Done' : t.due) + '</span></li>';
+    }).join('');
+
+    document.getElementById('decisions').innerHTML = D.decisions.map(function (d) {
+      return '<li>' + esc(d) + '</li>';
+    }).join('');
+    document.getElementById('rules').innerHTML = D.rules.map(function (r) {
+      return '<li>' + esc(r) + '</li>';
+    }).join('');
+  }
+
+  function countRow(num, label, p) {
+    return '<li><b>' + esc(num) + '</b><span>' + esc(label) + '</span><span class="pc">' + p + '%</span></li>';
+  }
+
+  // Example board only: these buttons do not save anything yet. Bestie updates the data block.
+  var note = document.getElementById('nextNote');
+  var original = null;
+  function say(msg) {
+    if (original === null) original = note.textContent;
+    note.textContent = msg;
+  }
+  document.getElementById('btnAccept').addEventListener('click', function () { say('Accepted. Bestie moves it to the top of the list.'); });
+  document.getElementById('btnLater').addEventListener('click', function () { say('Parked for later. Bestie will ask again tomorrow.'); });
+  document.getElementById('btnDecline').addEventListener('click', function () { say('Declined. Bestie will take it off the list.'); });
+
+  render();
+})();
+</script>
+</body>
+</html>
