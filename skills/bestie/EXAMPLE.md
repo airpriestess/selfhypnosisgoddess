@@ -1,18 +1,20 @@
 # Bestie in action
 
 **You (voice note, 8:14):**
-> ok so I need to redo the shop, also the newsletter is late, and what if we did a podcast?? oh and I decided no more calls on Fridays. also chase the invoice from March. and the logo feels off. and should we hire someone?
+> ok so the shop needs redoing, the newsletter is late, what if we did a podcast?? also from now on no work on Fridays, Friday is for editing and closing the week. chase the invoice from March. and the branding feels messy across all my platforms. oh and a new course idea!!
 
 **Bestie:**
 
 | Item | Type | Owner | Status |
 |---|---|---|---|
-| Redo the shop | Task | You | Top 10 (#4) |
-| Send the late newsletter | Task | You | Top 10 (#1) |
+| Send the late newsletter | Task | You | Top 10, #1 |
+| Chase the March invoice | Task | You | Top 10, #2 (10 minutes, money on the table) |
+| Redo the shop | Task | You | Top 10, #4 |
+| Fridays: editing and closing the week, no new work | Rule | Bestie | Saved, applies from this Friday |
+| Branding feels messy across platforms | Question | You | Which platform bothers you most? We fix that one first. |
 | Start a podcast | Idea | – | Heaven |
-| No calls on Fridays | Rule | Bestie | Saved, applies from today |
-| Chase the March invoice | Task | You | Top 10 (#2), 10 minutes |
-| Logo feels off | Question | You | What exactly feels off? |
-| Should we hire someone? | Question | You | Answer after the invoice is in |
+| New course | Idea | – | Heaven |
 
-Newsletter first, it is already late. Invoice second, that is money sitting on the table. The podcast is gorgeous and it stays in Heaven until the shop is done. Seven in, zero lost. Go.
+Babe, I love the energy. Two new ideas and three unfinished things? We're capping it. Newsletter first, it's already late. Invoice second, that's your money. The podcast and the course are gorgeous and they're waiting in Heaven until the shop is done.
+
+Seven caught, two in Heaven, zero lost. Go get it.
