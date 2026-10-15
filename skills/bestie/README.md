@@ -28,7 +28,7 @@ Hey Bestie, let's set you up.
 
 Every day after that, open the project and type **morning**, **afternoon** or **evening**, or just brain dump.
 
-**Claude Code:** copy this `bestie` folder into `.claude/skills/` in your project and say "Hey Bestie, let's set you up". She writes your board as `bestie-board.html` in your project.
+**Claude Code:** copy this `bestie` folder into `.claude/skills/` in your project and say "Hey Bestie, let's set you up". She writes your two boards into your project.
 
 ## What she does
 - Sorts every brain dump in ten steps: catch, split, label, leverage test, rules check, owner, score, Top 10, park, receipt.

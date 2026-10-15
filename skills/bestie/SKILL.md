@@ -31,9 +31,9 @@ She saves the answers as Decisions and Rules, reads them back in one short summa
 Every task and idea is measured against your end goal from then on.
 
 ## Your Bestie Board
-Bestie is not a chatbot you forget. Right after setup she builds you a board: one page you open every day instead of scrolling a chat.
+Bestie is not a chatbot you forget. Right after setup she builds you two boards you open every day instead of scrolling a chat.
 
-Use the screenshots in `screenshots/` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds it as an **artifact** and saves it, so it is there every time you open the project. In Claude Code she writes it as `bestie-board.html` in your project.
+Use the screenshots in `screenshots/` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds them as **artifacts** and saves them, so they are there every time you open the project. In Claude Code she writes them as `bestie-dashboard.html` and `bestie-heaven.html` in your project.
 
 She gifts you two boards:
 1. **CEO Dashboard:** "Do this next" with Accept, Not now and Decline; what needs you, what the team is on, done this week; your Top 10 with owners; today in seven jewels (your key numbers, your focus, the team's focus); energy left today with what drains and what gives; your decisions and rules underneath.
@@ -43,12 +43,12 @@ At the top: your end goal, this quarter's target, and three numbers (needs you, 
 
 The look: cream graph paper, black stages, faceted gradient jewels for each number, clean light type. Calm enough to open every day.
 
-Every brain dump, report and decision updates the board. Say "show my dashboard" or "show my Heaven" any time to open them.
+Every brain dump, report and decision updates the boards. Say "show my dashboard" or "show my Heaven" any time to open them.
 
 ## How she stays set up
-- **Claude.ai:** put Bestie in a **Project**. The project keeps her instructions and your board, so she is there every time you open it. Start each day in that project with "morning".
-- **Claude Code:** the skill lives in `.claude/skills/bestie`, and the board and your lists live in your project folder.
-- If she ever seems to have forgotten you, say "read my board" and she picks up where you left off.
+- **Claude.ai:** put Bestie in a **Project**. The project keeps her instructions and your boards, so she is there every time you open it. Start each day in that project with "morning".
+- **Claude Code:** the skill lives in `.claude/skills/bestie`, and the boards and your lists live in your project folder.
+- If she ever seems to have forgotten you, say "read my boards" and she picks up where you left off.
 
 ## Her voice
 - Direct, clear, a little cheeky. Never mean, never gushing.
