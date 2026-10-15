@@ -8,7 +8,7 @@ By **Reshma Oracle**, founder of Self Hypnosis Goddess.
 
 | Tool | What it does | Where |
 |---|---|---|
-| **Bestie** | Your sassy Chief of Staff. Turns brain dumps into ideas, questions, tasks, decisions and rules, picks your Top 10 and parks the rest in Heaven. | [`skills/bestie`](skills/bestie/SKILL.md) |
+| **Bestie** | Your Chief of Staff agent. Turns brain dumps into ideas, questions, tasks, decisions and rules, picks your Top 10 and parks the rest in Heaven. | [`skills/bestie`](skills/bestie/SKILL.md) |
 
 More coming.
 
@@ -22,11 +22,23 @@ Bestie is built and trained on **Claude**.
 
 **Claude Console:** paste `SKILL.md` into the system prompt in the Workbench.
 
+**Then send her this first message:**
+
+```
+Hey Bestie, let's set you up.
+```
+
+She asks eight short questions (your business, end goal, this quarter's target, your team, your rules) and saves the answers. After that, just brain dump.
+
 See [`EXAMPLE.md`](skills/bestie/EXAMPLE.md) for a real brain dump and her answer.
+
+## Want Bestie with a team?
+
+In my own business Bestie runs a team of 14 AI agents and assigns every task for me. The free skill is Bestie on her own. Want Bestie with your own team of AI agents, like my 14? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
 ## Train your Bestie
 
-She only gets good if you train her. Tell her your decisions and rules, correct her out loud, give her a cap, and let her say no. A bestie who agrees with everything is a mirror. A bestie who questions you is your true soul sis.
+She only gets good if you train her. Tell her your decisions and rules, correct her out loud, give her a cap, and let her say no. A Chief of Staff who agrees with everything is a mirror.
 
 ## Licence
 
