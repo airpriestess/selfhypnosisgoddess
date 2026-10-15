@@ -71,6 +71,26 @@ My dashboard is the same one, but live. It pulls from every report, bot and memo
 
 <a href="screenshots/hq-linkedin-studio.png"><img src="screenshots/hq-linkedin-studio.png" width="100%" alt="My LinkedIn Studio"></a>
 
+**My go to market machine: post, keyword, lead, sale, source, one loop**
+
+<a href="screenshots/hq-gtm-home.png"><img src="screenshots/hq-gtm-home.png" width="100%" alt="My go to market machine: post, keyword, lead, sale, source, one loop"></a>
+
+**My ideal customer: six personas, each one a segment to test**
+
+<a href="screenshots/hq-icp-journey.png"><img src="screenshots/hq-icp-journey.png" width="100%" alt="My ideal customer: six personas, each one a segment to test"></a>
+
+**Every lead gets a welcome: quiz, gift and beta leads into one list**
+
+<a href="screenshots/hq-leads-inbox.png"><img src="screenshots/hq-leads-inbox.png" width="100%" alt="Every lead gets a welcome: quiz, gift and beta leads into one list"></a>
+
+**What the market tells me: every competitor, and this week's three action points**
+
+<a href="screenshots/hq-market-intel.png"><img src="screenshots/hq-market-intel.png" width="100%" alt="What the market tells me: every competitor, and this week's three action points"></a>
+
+**My Cosmic Universe: eight systems, today's insights, the best times to work**
+
+<a href="screenshots/hq-cosmic-universe.png"><img src="screenshots/hq-cosmic-universe.png" width="100%" alt="My Cosmic Universe: eight systems, today's insights, the best times to work"></a>
+
 
 Want Bestie with your own AI team, a live dashboard and workflows that connect? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
