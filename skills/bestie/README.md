@@ -4,15 +4,17 @@
 
 Built for solo founders, but it works for any business or any busy life: a coach, a shop, an agency, a freelancer, a side project.
 
-## What you get: a board, not a chatbot
+## What you get, free
 
-This is my own back office, the one Bestie runs for me every day. After setup, she gifts you two boards, built in this style: your CEO Dashboard and your Heaven. You open them every day instead of scrolling a chat.
+After setup, Bestie gifts you two boards you open every day instead of scrolling a chat.
 
-**CEO Dashboard:** what needs you, what the team is on, and today in seven jewels
-![CEO Dashboard](screenshots/hq-ceo-dashboard.png)
+**Your CEO Dashboard:** do this next, what needs you, your Top 10, today in seven jewels, energy left today
+![Your free CEO Dashboard](screenshots/free-dashboard.png)
 
-**Heaven:** every idea parked by theme, growing into Eden and down to Earth when it ships
+**Your Heaven:** every idea parked by theme, growing from Heaven to Eden to Earth when it ships
 ![Heaven](screenshots/hq-heaven.png)
+
+Bestie builds them from your brain dumps and keeps them up to date in your Claude Project.
 
 ## How to use her (3 minutes)
 
@@ -39,7 +41,13 @@ Every day after that, open the project and type **morning**, **afternoon** or **
 
 See [`EXAMPLE.md`](EXAMPLE.md) for a real voice note and how she sorted it.
 
-## Want Bestie with a team?
-In my own business Bestie runs a team of 14 AI agents and assigns every task. This free skill is Bestie on her own. Want her with your own team of AI agents? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
+## Want a dashboard like mine, all set up?
+
+This is my real CEO Dashboard. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
+
+![My CEO Dashboard](screenshots/hq-ceo-dashboard.png)
+![My workflows](screenshots/hq-workflows.png)
+
+Want Bestie with your own AI team, a live dashboard and workflows that connect? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
 Made by Reshma Oracle, founder of Self Hypnosis Goddess. Built and trained on Claude. Free to use, MIT licence.

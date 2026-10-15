@@ -33,7 +33,7 @@ Every task and idea is measured against your end goal from then on.
 ## Your Bestie Board
 Bestie is not a chatbot you forget. Right after setup she builds you two boards you open every day instead of scrolling a chat.
 
-Use the screenshots in `screenshots/` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds them as **artifacts** and saves them, so they are there every time you open the project. In Claude Code she writes them as `bestie-dashboard.html` and `bestie-heaven.html` in your project.
+Use `screenshots/free-dashboard.png` and `screenshots/hq-heaven.png` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds them as **artifacts** and saves them, so they are there every time you open the project. In Claude Code she writes them as `bestie-dashboard.html` and `bestie-heaven.html` in your project.
 
 She gifts you two boards:
 1. **CEO Dashboard:** "Do this next" with Accept, Not now and Decline; what needs you, what the team is on, done this week; your Top 10 with owners; today in seven jewels (your key numbers, your focus, the team's focus); energy left today with what drains and what gives; your decisions and rules underneath.
