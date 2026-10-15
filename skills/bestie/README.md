@@ -8,11 +8,14 @@ Built for solo founders, but it works for any business or any busy life: a coach
 
 After setup, Bestie gifts you two boards in the same look as mine: your CEO Dashboard and your Heaven. You open them every day instead of scrolling a chat.
 
-**Your CEO Dashboard** (example)
-![Your free CEO Dashboard](screenshots/free-dashboard.png)
+**Your CEO Dashboard** (example) and **your Heaven**: every idea parked by theme, growing from Heaven to Eden to Earth when it ships
 
-**Your Heaven:** every idea parked by theme, growing from Heaven to Eden to Earth when it ships
-![Heaven](screenshots/hq-heaven.png)
+<p>
+<a href="screenshots/free-dashboard.png"><img src="screenshots/free-dashboard.png" width="49%" alt="Your free CEO Dashboard"></a>
+<a href="screenshots/hq-heaven.png"><img src="screenshots/hq-heaven.png" width="49%" alt="Your Heaven"></a>
+</p>
+
+Click any picture to see it full size. In the free version nothing syncs by itself: Bestie updates your boards when you talk to her.
 
 ## Free Bestie, or a back office like mine?
 
@@ -53,8 +56,13 @@ See [`EXAMPLE.md`](EXAMPLE.md) for a real voice note and how she sorted it.
 
 This is my real CEO Dashboard, live. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
 
-![My CEO Dashboard](screenshots/hq-ceo-dashboard.png)
-![My workflows](screenshots/hq-workflows.png)
+<p>
+<a href="screenshots/hq-ceo-dashboard.png"><img src="screenshots/hq-ceo-dashboard.png" width="49%" alt="My CEO Dashboard"></a>
+<a href="screenshots/hq-workflows.png"><img src="screenshots/hq-workflows.png" width="49%" alt="My workflows"></a>
+</p>
+<p><a href="screenshots/hq-bots.png"><img src="screenshots/hq-bots.png" width="49%" alt="My bots control room"></a></p>
+
+My dashboard, my workflows and my bots control room: 21 bots running the business, all in sync.
 
 Want Bestie with your own AI team, a live dashboard and workflows that connect? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
