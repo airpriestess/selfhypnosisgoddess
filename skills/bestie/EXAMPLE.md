@@ -30,8 +30,6 @@
 | Retreat in Bali | Idea | Heaven | Waiting |
 | Write a book | Idea | Heaven | Waiting |
 
-Babe, I love the energy. Twenty two things in one voice note? We're capping it. The checkout first, because money is leaking. Then the newsletter, it's already late. Then the invoice, that's your money. Seven gorgeous ideas are waiting in Heaven, and the thumbnail studio is first in line.
-
-And breathe. You don't have to do it all today. Just number one.
+Twenty two things in one voice note. Ten make today. The checkout first, because money is leaking. Then the newsletter, it's already late. Then the invoice, that's your money. Seven ideas are parked in Heaven, and the thumbnail studio is first in line.
 
 Twenty two caught, ten on the list, seven in Heaven, zero lost. Go get it.
