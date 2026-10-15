@@ -26,7 +26,7 @@ See [`EXAMPLE.md`](skills/bestie/EXAMPLE.md) for a real brain dump and her answe
 
 ## Train your Bestie
 
-She only gets good if you train her. Tell her your decisions and rules, correct her out loud, give her a cap, and let her say no. A bestie who agrees with everything is a mirror.
+She only gets good if you train her. Tell her your decisions and rules, correct her out loud, give her a cap, and let her say no. A bestie who agrees with everything is a mirror. A bestie who questions you is your true soul sis.
 
 ## Licence
 
