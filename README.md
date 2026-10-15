@@ -24,6 +24,10 @@ Bestie is built and trained on **Claude**.
 
 See [`EXAMPLE.md`](skills/bestie/EXAMPLE.md) for a real brain dump and her answer.
 
+## Want Bestie with a team?
+
+In my own business Bestie runs a team of 14 AI agents and assigns every task for me. The free skill is Bestie on her own. If you want help building your own AI team, contact me: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
+
 ## Train your Bestie
 
 She only gets good if you train her. Tell her your decisions and rules, correct her out loud, give her a cap, and let her say no. A Chief of Staff who agrees with everything is a mirror.
