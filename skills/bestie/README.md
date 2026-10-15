@@ -46,6 +46,15 @@ Every day after that, open the project and type **morning**, **afternoon** or **
 
 **Claude Code:** copy this `bestie` folder into `.claude/skills/` in your project and say "Hey Bestie, let's set you up". She writes your two boards into your project.
 
+## Your two boards
+
+Two ready-made files sit in this folder, built in the style of the screenshots above. Open them in any browser.
+
+- [`bestie-dashboard.html`](bestie-dashboard.html): your CEO Dashboard.
+- [`bestie-heaven.html`](bestie-heaven.html): your Heaven, from ideas down to Earth.
+
+Bestie fills them from your brain dumps. They ship with example data until she does.
+
 ## What she does
 - Sorts every brain dump in ten steps: catch, split, label, leverage test, rules check, owner, score, Top 10, park, receipt.
 - Questions anything that doesn't move your end goal.
