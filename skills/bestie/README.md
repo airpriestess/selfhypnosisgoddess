@@ -4,20 +4,21 @@
 
 Built for solo founders, but it works for any business or any busy life: a coach, a shop, an agency, a freelancer, a side project.
 
-## What you get, free
+## What you get, free: my entire dashboard
 
-After setup, Bestie gifts you two boards in the same look as mine: your CEO Dashboard and your Heaven. You open them every day instead of scrolling a chat.
+I'm giving you my entire CEO Dashboard and my Heaven, for free.
 
-**Your CEO Dashboard (example)**
+The difference: mine is set up. It runs on my bots, routines, workflows and AI team. Yours starts as just the dashboard, filled by your ideas, your brain dumps and your Heaven. You can set up the rest yourself, or get my help.
 
-<a href="screenshots/free-dashboard.png"><img src="screenshots/free-dashboard.png" width="100%" alt="Your free CEO Dashboard"></a>
+**My CEO Dashboard: yours, free**
 
-**Your Heaven: every idea parked by theme, growing from Heaven to Eden to Earth when it ships**
+<a href="screenshots/hq-ceo-dashboard.png"><img src="screenshots/hq-ceo-dashboard.png" width="100%" alt="CEO Dashboard"></a>
 
-<a href="screenshots/hq-heaven.png"><img src="screenshots/hq-heaven.png" width="100%" alt="Your Heaven"></a>
+**Heaven: every idea parked by theme, growing from Heaven to Eden to Earth when it ships**
 
+<a href="screenshots/hq-heaven.png"><img src="screenshots/hq-heaven.png" width="100%" alt="Heaven"></a>
 
-Click any picture to see it full size. In the free version nothing syncs by itself: Bestie updates your boards when you talk to her.
+Click any picture to see it full size.
 
 ## Free Bestie, or a back office like mine?
 
@@ -56,11 +57,7 @@ See [`EXAMPLE.md`](EXAMPLE.md) for a real voice note and how she sorted it.
 
 ## Want a dashboard like mine, all set up?
 
-This is my real CEO Dashboard, live. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
-
-**My CEO Dashboard, live**
-
-<a href="screenshots/hq-ceo-dashboard.png"><img src="screenshots/hq-ceo-dashboard.png" width="100%" alt="My CEO Dashboard"></a>
+My dashboard is the same one, but live. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
 
 **My workflows: her journey, station by station, each with its playbooks**
 
