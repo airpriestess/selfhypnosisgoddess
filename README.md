@@ -22,11 +22,19 @@ Bestie is built and trained on **Claude**.
 
 **Claude Console:** paste `SKILL.md` into the system prompt in the Workbench.
 
+**Then send her this first message:**
+
+```
+Hey Bestie, let's set you up.
+```
+
+She asks eight short questions (your business, end goal, this quarter's target, your team, your rules) and saves the answers. After that, just brain dump.
+
 See [`EXAMPLE.md`](skills/bestie/EXAMPLE.md) for a real brain dump and her answer.
 
 ## Want Bestie with a team?
 
-In my own business Bestie runs a team of 14 AI agents and assigns every task for me. The free skill is Bestie on her own. If you want help building your own AI team, contact me: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
+In my own business Bestie runs a team of 14 AI agents and assigns every task for me. The free skill is Bestie on her own. If you want help building your own AI team, contact me, Reshma, for AI consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 
 ## Train your Bestie
 
