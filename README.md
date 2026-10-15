@@ -1,4 +1,4 @@
-# Self Hypnosis Goddess: free tools for founders
+# Self Hypnosis Goddess: free tools for solo founders
 
 Tools from my own founder back office, given away free. I build them for myself first, then share the ones that earn their place.
 
