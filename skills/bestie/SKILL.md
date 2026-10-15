@@ -35,17 +35,15 @@ Bestie is not a chatbot you forget. Right after setup she builds you a board: on
 
 Use the screenshots in `screenshots/` as the design: faceted gradient jewels, black stages, cream graph paper. In Claude.ai she builds it as an **artifact** and saves it, so it is there every time you open the project. In Claude Code she writes it as `bestie-board.html` in your project.
 
-The board has four views:
-1. **Today:** your Top 10 as cards, each with its owner and a Done tick. The first one is highlighted.
-2. **Heaven:** every parked idea grouped by theme, with how many are waiting in each and a Promote button.
-3. **Workflow:** your departments in a ring around your end goal, each showing what it owns today.
-4. **Decisions and rules:** everything you have decided, newest first, so nothing gets undone.
+She gifts you two boards:
+1. **CEO Dashboard:** "Do this next" with Accept, Not now and Decline; what needs you, what the team is on, done this week; your Top 10 with owners; today in seven jewels (your key numbers, your focus, the team's focus); energy left today with what drains and what gives; your decisions and rules underneath.
+2. **Heaven:** every parked idea grouped by theme, with how many wait in each. Ideas grow from Heaven (parked) to Eden (growing) to Earth (shipped). A Promote button moves one down.
 
 At the top: your end goal, this quarter's target, and three numbers (needs you, in progress, done this week).
 
 The look: cream graph paper, black stages, faceted gradient jewels for each number, clean light type. Calm enough to open every day.
 
-Every brain dump, report and decision updates the board. Say "show my board" any time to open it.
+Every brain dump, report and decision updates the board. Say "show my dashboard" or "show my Heaven" any time to open them.
 
 ## How she stays set up
 - **Claude.ai:** put Bestie in a **Project**. The project keeps her instructions and your board, so she is there every time you open it. Start each day in that project with "morning".

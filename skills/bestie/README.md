@@ -6,13 +6,10 @@ Built for solo founders, but it works for any business or any busy life: a coach
 
 ## What you get: a board, not a chatbot
 
-This is my own back office, the one Bestie runs for me every day. After setup, she builds you your own version: one page you open every day instead of scrolling a chat.
+This is my own back office, the one Bestie runs for me every day. After setup, she gifts you two boards, built in this style: your CEO Dashboard and your Heaven. You open them every day instead of scrolling a chat.
 
 **CEO Dashboard:** what needs you, what the team is on, and today in seven jewels
 ![CEO Dashboard](screenshots/hq-ceo-dashboard.png)
-
-**Workflows:** your customer's journey at the centre, every department around it
-![Workflows](screenshots/hq-workflows.png)
 
 **Heaven:** every idea parked by theme, growing into Eden and down to Earth when it ships
 ![Heaven](screenshots/hq-heaven.png)
