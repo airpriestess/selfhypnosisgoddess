@@ -8,12 +8,14 @@ Built for solo founders, but it works for any business or any busy life: a coach
 
 After setup, Bestie gifts you two boards in the same look as mine: your CEO Dashboard and your Heaven. You open them every day instead of scrolling a chat.
 
-**Your CEO Dashboard** (example) and **your Heaven**: every idea parked by theme, growing from Heaven to Eden to Earth when it ships
+**Your CEO Dashboard (example)**
 
-<p>
-<a href="screenshots/free-dashboard.png"><img src="screenshots/free-dashboard.png" width="49%" alt="Your free CEO Dashboard"></a>
-<a href="screenshots/hq-heaven.png"><img src="screenshots/hq-heaven.png" width="49%" alt="Your Heaven"></a>
-</p>
+<a href="screenshots/free-dashboard.png"><img src="screenshots/free-dashboard.png" width="100%" alt="Your free CEO Dashboard"></a>
+
+**Your Heaven: every idea parked by theme, growing from Heaven to Eden to Earth when it ships**
+
+<a href="screenshots/hq-heaven.png"><img src="screenshots/hq-heaven.png" width="100%" alt="Your Heaven"></a>
+
 
 Click any picture to see it full size. In the free version nothing syncs by itself: Bestie updates your boards when you talk to her.
 
@@ -56,13 +58,22 @@ See [`EXAMPLE.md`](EXAMPLE.md) for a real voice note and how she sorted it.
 
 This is my real CEO Dashboard, live. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
 
-<p>
-<a href="screenshots/hq-ceo-dashboard.png"><img src="screenshots/hq-ceo-dashboard.png" width="49%" alt="My CEO Dashboard"></a>
-<a href="screenshots/hq-workflows.png"><img src="screenshots/hq-workflows.png" width="49%" alt="My workflows"></a>
-</p>
-<p><a href="screenshots/hq-bots.png"><img src="screenshots/hq-bots.png" width="49%" alt="My bots control room"></a></p>
+**My CEO Dashboard, live**
 
-My dashboard, my workflows and my bots control room: 21 bots running the business, all in sync.
+<a href="screenshots/hq-ceo-dashboard.png"><img src="screenshots/hq-ceo-dashboard.png" width="100%" alt="My CEO Dashboard"></a>
+
+**My workflows: her journey, station by station, each with its playbooks**
+
+<a href="screenshots/hq-workflows.png"><img src="screenshots/hq-workflows.png" width="100%" alt="My workflows"></a>
+
+**One workflow opened: organic content strategy, every channel, owner and tool connected**
+
+<a href="screenshots/hq-organic-strategy.png"><img src="screenshots/hq-organic-strategy.png" width="100%" alt="My organic content strategy workflow"></a>
+
+**My LinkedIn Studio: every post, both pages, the week at a glance, drafts with their pictures, approve or send back**
+
+<a href="screenshots/hq-linkedin-studio.png"><img src="screenshots/hq-linkedin-studio.png" width="100%" alt="My LinkedIn Studio"></a>
+
 
 Want Bestie with your own AI team, a live dashboard and workflows that connect? Contact me, Reshma, for AI architecture and consultancy: [reshmaoracle.com/t/gh-team](https://reshmaoracle.com/t/gh-team).
 

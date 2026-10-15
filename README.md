@@ -12,6 +12,10 @@ By **Reshma Oracle**, founder of Self Hypnosis Goddess.
 
 More coming.
 
+<a href="skills/bestie"><img src="skills/bestie/screenshots/hq-ceo-dashboard.png" width="100%" alt="My CEO Dashboard, run by Bestie"></a>
+
+My own CEO Dashboard, run by Bestie. [See what you get free](skills/bestie).
+
 ## How to use Bestie
 
 Bestie is built and trained on **Claude**.
