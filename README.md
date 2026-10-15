@@ -8,7 +8,7 @@ By **Reshma Oracle**, founder of Self Hypnosis Goddess.
 
 | Tool | What it does | Where |
 |---|---|---|
-| **Bestie** | Your Chief of Staff agent. Turns brain dumps into ideas, questions, tasks, decisions and rules, picks your Top 10 and parks the rest in Heaven. | [`skills/bestie`](skills/bestie/SKILL.md) |
+| **Bestie** | Your Chief of Staff agent. Turns brain dumps into ideas, questions, tasks, decisions and rules, picks your Top 10 and parks the rest in Heaven. | [`skills/bestie`](skills/bestie) |
 
 More coming.
 

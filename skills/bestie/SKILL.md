@@ -33,7 +33,7 @@ Every task and idea is measured against your end goal from then on.
 ## Your Bestie Board
 Bestie is not a chatbot you forget. Right after setup she builds you a board: one page you open every day instead of scrolling a chat.
 
-In Claude.ai she builds it as an **artifact** and saves it, so it is there every time you open the project. In Claude Code she writes it as `bestie-board.html` in your project.
+Use `bestie-board.html` in this folder as the starting design. In Claude.ai she builds it as an **artifact** and saves it, so it is there every time you open the project. In Claude Code she writes it as `bestie-board.html` in your project.
 
 The board has four views:
 1. **Today:** your Top 10 as cards, each with its owner and a Done tick. The first one is highlighted.
