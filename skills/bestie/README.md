@@ -6,15 +6,23 @@ Built for solo founders, but it works for any business or any busy life: a coach
 
 ## What you get, free
 
-After setup, Bestie gifts you two boards you open every day instead of scrolling a chat.
+After setup, Bestie gifts you two boards in the same look as mine: your CEO Dashboard and your Heaven. You open them every day instead of scrolling a chat.
 
-**Your CEO Dashboard:** do this next, what needs you, your Top 10, today in seven jewels, energy left today
+**Your CEO Dashboard** (example)
 ![Your free CEO Dashboard](screenshots/free-dashboard.png)
 
 **Your Heaven:** every idea parked by theme, growing from Heaven to Eden to Earth when it ships
 ![Heaven](screenshots/hq-heaven.png)
 
-Bestie builds them from your brain dumps and keeps them up to date in your Claude Project.
+## Free Bestie, or a back office like mine?
+
+| | Free Bestie | A back office like mine |
+|---|---|---|
+| Where the numbers come from | What you tell her in chat | Live from your shop, payments, email, socials and bots |
+| Who does the work | You, with Bestie naming the owner | A team of AI agents (I run 14) |
+| Dashboard | Updated when you talk to her | Updates itself all day |
+| Heaven | Your ideas, sorted | Ideas connected to tasks, workflows and the team |
+| Workflows | Not included | Every step written down and connected |
 
 ## How to use her (3 minutes)
 
@@ -43,7 +51,7 @@ See [`EXAMPLE.md`](EXAMPLE.md) for a real voice note and how she sorted it.
 
 ## Want a dashboard like mine, all set up?
 
-This is my real CEO Dashboard. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
+This is my real CEO Dashboard, live. It pulls from every report, bot and memory in my business, and a team of 14 AI agents works from it around the clock, with workflows that connect every step.
 
 ![My CEO Dashboard](screenshots/hq-ceo-dashboard.png)
 ![My workflows](screenshots/hq-workflows.png)
